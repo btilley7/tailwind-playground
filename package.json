@@ -1,0 +1,23 @@
+{
+  "name": "local-web-dev",
+  "version": "1.0.0",
+  "description": "A package for local web dev and tailwind learning.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:build": "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/btilley/"
+  },
+  "keywords": [
+    "tailwind"
+  ],
+  "author": "Brandt",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "tailwindcss": "^3.0.7"
+  }
+}

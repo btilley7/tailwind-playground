@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=desktop, initial-scale=1.0">
+    <title>Tailwind Playground</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap" rel="stylesheet">
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40570418-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40570418-2');
+</script>
+
+
+</head>
+<body class="bg-slate-800">
+
+<div class="w-3/5 mx-auto py-10">
+    <div class="grid grid-cols-4 gap-10 calculator" >
+        <div class="p-10 bg-gray-200 border-2 border-yellow-600 col-span-4"><p class="text-2xl text-right" id="display">&nbsp;</p></div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">7</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">8</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">9</div>
+        <div data-function="equal" class="p-10 bg-yellow-700 hover:shadow-yellow-700 hover:shadow-2xl text-2xl text-center text-white" id="total">*</div>            
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">4</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">5</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">6</div>
+        <div data-function="clear" class="p-10 bg-yellow-700 hover:shadow-yellow-700 hover:shadow-2xl text-2xl text-center text-white" id="clear">-</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">1</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">2</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">3</div>
+        <div data-function="plus" class="p-10 bg-yellow-700 hover:shadow-yellow-700 hover:shadow-2xl text-2xl text-center text-white" id="plus">/</div>
+        <div class="p-10 bg-gray-200 hover:shadow-sky-600 hover:shadow-2xl text-2xl text-center number">0</div>
+        <div data-function="equal" class="p-10 bg-yellow-600 hover:shadow-yellow-500 hover:shadow-2xl text-2xl text-center text-white col-span-2" id="total">=</div>
+        <div data-function="plus" class="p-10 bg-yellow-700 hover:shadow-yellow-700 hover:shadow-2xl text-2xl text-center text-white" id="plus">+</div>
+        <div data-function="clear" class="p-10 bg-red-600 hover:shadow-red-500 hover:shadow-2xl text-2xl text-center text-white col-span-4" id="clear">C</div>
+            
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
